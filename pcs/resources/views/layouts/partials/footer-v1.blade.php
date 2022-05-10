@@ -5,11 +5,11 @@
                 <div class="footer-widget">
                     <h4 class="title">Our Services</h4>
                     <ul>
-                        <li><a href="#0"><i class="fal fa-angle-right "></i> Maid Services</a></li>
+                        <li><a href="#0"><i class="fal fa-angle-right "></i> Floor and Carpet Cleaning</a></li>
                         <li><a href="#0"><i class="fal fa-angle-right "></i> Window Cleaning</a></li>
-                        <li><a href="#0"><i class="fal fa-angle-right "></i> Domestic Cleaning</a></li>
-                        <li><a href="#0"><i class="fal fa-angle-right "></i> House Cleaning</a></li>
-                        <li><a href="#0"><i class="fal fa-angle-right "></i> Professional Carwashing</a></li>
+                        <li><a href="#0"><i class="fal fa-angle-right "></i> Event Cleaning</a></li>
+                        <li><a href="#0"><i class="fal fa-angle-right "></i> Pressure Washing</a></li>
+                        <li><a href="#0"><i class="fal fa-angle-right "></i> Post-Construction Cleanup</a></li>
                     </ul>
                 </div>
             </div>

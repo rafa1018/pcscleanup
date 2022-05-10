@@ -22,7 +22,7 @@
                             <img src="{{asset('assets/images/about/about-2-thumb-3.jpeg')}}" alt="">
                         </div>
                         <div class="about-thumb-box">
-                            <h2 class="title"><span class="odometer" data-count="25">00</span><span class="plus">+</span>
+                            <h2 class="title"><span class="odometer" data-count="{{$data['experiencia']}}">00</span><span class="plus">+</span>
                                 <span class="year">Years Of Experience</span></h2>
                         </div>
                     </div>
@@ -41,9 +41,7 @@
                     </div>
                     <div class="about-list-wrapper">
                         <div class="content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna
-                                aliqua. Ut enim ad minim veniam.</p>
+                            <p>Professional Cleaning Services is a company of highly qualified professional cleaning services registered in South Florida, with a consolidated market in our area. We are fully licensed, bonded and insured for your peace of mind. We offer competitive hourly and contratact rates and are also available for event clean-up services. Trust P.C.S for quality janitorial services. Let us clean your commercial location today.</p>
                         </div>
                         <div class="about-list about-list-2 mt-none-20">
                             <div class="single-item d-flex align-items-center mt-20">
@@ -84,7 +82,7 @@
 </section>
 <!-- about area end -->
 
-    <!-- service area start -->
+    <!-- service area start 
     <section class="service-area pt-120 bg-3">
         <div class="container">
             <div class="row align-items-center">
@@ -169,9 +167,9 @@
             </div>
         </div>
     </section>
-    <!-- service area end -->
+    service area end -->
 
-    <!-- get-quote area start -->
+    <!-- get-quote area start 
     <section class="get-quote-area pt-120 pb-170">
         <div class="container">
             <div class="row">
@@ -215,9 +213,9 @@
             </div>
         </div>
     </section>
-    <!-- get-quote area end -->
+    get-quote area end -->
 
-    <!-- process area start -->
+    <!-- process area start
     <section class="process-area bg-2 pt-120 pb-120">
         <div class="container">
             <div class="row justify-content-center">
@@ -277,9 +275,9 @@
             </div>
         </div>
     </section>
-    <!-- process area end -->
+     process area end -->
 
-    <!-- appointment area start -->
+    <!-- appointment area start 
     <section class="appointment-area pt-120 pb-120 bg_img" data-overlay="6" data-background="assets/images/bg/contact-1-bg.jpeg">
         <div class="container">
             <div class="row">
@@ -345,9 +343,9 @@
             </div>
         </div>
     </section>
-    <!-- appointment area end -->
+     appointment area end -->
 
-    <!-- projects area start -->
+    <!-- projects area start 
     <section class="project-area pt-120 pb-120">
         <div class="container">
             <div class="row justify-content-center">
@@ -425,9 +423,9 @@
             </div>
         </div>
     </section>
-    <!-- projects area end -->
+     projects area end -->
 
-    <!-- brand area start -->
+    <!-- brand area start
     <div class="sponser-area pb-100">
         <div class="container">
             <div class="row no-gutters">
@@ -453,9 +451,9 @@
             </div>
         </div>
     </div>
-    <!-- brand area end -->
+     brand area end -->
 
-    <!-- newslater area start -->
+    <!-- newslater area start 
     <section class="newslater-area bg-3 pt-120 pb-120">
         <span class="newslater-shape">
             <img src="assets/images/shapes/newslater-hand-shape.png" alt="">
@@ -484,9 +482,9 @@
             </div>
         </div>
     </section>
-    <!-- newslater area end -->
+     newslater area end -->
 
-    <!-- testimonial area start -->
+    <!-- testimonial area start 
     <section class="testimonial-area pt-120 pb-160 bg_img" data-background="assets/images/bg/testimonial-1-bg-1.jpeg">
         <div class="container">
             <div class="row justify-content-center">
@@ -540,5 +538,42 @@
             </div>
         </div>
     </section>
-    <!-- testimonial area end -->
+    testimonial area end -->
+
+     <!-- footer-top box start 
+     <section class="footer-top-box-area">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <div class="footer-top-box d-flex align-items-center left">
+                        <div class="footer-box-icon">
+                            <img src="{{ asset('assets/images/icons/track-icon.png') }}" alt="">
+                        </div>
+                        <div class="footer-box-content">
+                            <h2 class="footer-box-title">Track Your Area</h2>
+                            <p>We provide janitorial and specialized cleaning services for all typ es and sizes of
+                                complexes from small to large
+                                offices.</p>
+                            <a href="contact.html" class="inline-btn"><i class="fal fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="footer-top-box d-flex align-items-center right">
+                        <div class="footer-box-icon">
+                            <img src="{{ asset('assets/images/icons/estimate-icon.png') }}" alt="">
+                        </div>
+                        <div class="footer-box-content">
+                            <h2 class="footer-box-title">Request An Estimate</h2>
+                            <p>We provide janitorial and specialized cleaning services for all typ es and sizes of
+                                complexes from small to large
+                                offices.</p>
+                            <a href="contact.html" class="inline-btn"><i class="fal fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     footer-top box end -->
 @endsection

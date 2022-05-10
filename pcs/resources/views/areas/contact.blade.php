@@ -48,9 +48,9 @@
                         <div class="feature-content">
                             <h3 class="feture-title mb-20">Email Address</h3>
                             <p>
-                                <a href="mailto:info@webmail.com">info@webmail.com</a> <br>
-                                <a href="mailto:support@webmail.com">support@webmail.com</a> <br>
-                                <a href="mailto:jobs.webmail.com">jobs.webmail.com</a>
+                                <a href="mailto:{{$data['correo_principal']}}">{{$data['correo_principal']}}</a> <br>
+                                <a href="mailto:{{$data['correo_secundario']}}">{{$data['correo_secundario']}}</a> <br>
+                                <a href="mailto:{{$data['correo_tercero']}}">{{$data['correo_tercero']}}</a>
                             </p>
                             <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Mail Us</a>
                         </div>

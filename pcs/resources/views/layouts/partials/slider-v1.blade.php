@@ -57,6 +57,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="single-slide-content">
+                        <!--
                         <a href="//www.youtube.com/embed/4xe72U7mXNg?rel=0&amp;controls=0&amp;showinfo=0" data-rel="lightcase:myCollection"
                             data-animation="fadeInLeft" data-delay=".1s" class="video-link">
                             <div class="video-play-wrap">
@@ -68,7 +69,7 @@
                                     <i class="fa fa-play"></i>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                         <div class="slide-text" data-animation="fadeInUp" data-delay=".3s">
                             <p>Get Amazing Home & Qude Cleaning Experience</p>
                         </div>

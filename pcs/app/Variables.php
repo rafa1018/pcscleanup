@@ -17,7 +17,11 @@ class Variables extends Model
             'facebook' => 'https://www.facebook.com/pcscleanupcorp',
             'twitter' => 'https://twitter.com/pcscleanup',
             'linkedin' => '#',
-            'instagram' => 'https://www.instagram.com/pcscleanup/',           
+            'instagram' => 'https://www.instagram.com/pcscleanup/',         
+            'correo_secundario' => 'rwicks@pcscleanup.com',
+            'correo_tercero' => 'cmparrado@pcscleanup.com',
+            'experiencia' => '25'
+            
         ]; 
 
         return $data;
