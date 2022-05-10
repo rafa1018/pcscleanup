@@ -70,9 +70,10 @@
                             </div>
                         </div>
                         <div class="about-list-author mt-40">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore</p>
-                            <h5 class="name">Rosalina D. William <span class="designation">Founder</span></h5>
+                            <p>We know how important it is to provide the best possible cleaning service. 
+                                That's why our experts are always following strict custom-tailored checklists and making sure every household
+                                 receives high quality cleaning at an affordable price!</p>
+                            <h5 class="name">Madid Pedraza <span class="designation">Founder</span></h5>
                         </div>
                     </div>
                 </div>

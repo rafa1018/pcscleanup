@@ -64,9 +64,9 @@
                         <div class="feature-content">
                             <h3 class="feture-title mb-20">Phone Number</h3>
                             <p>
-                                <a href="tel:+8767654654656">+876 7654 654 65 6</a> <br>
-                                <a href="tel:+87987676546564">+87(987) 676 546 56 4</a> <br>
-                                <a href="tel:+87676565458">+876 765 654 58</a>
+                                <a href="tel:+1{{$data['telefono_principal']}}">+1 {{$data['telefono_principal']}}</a> <br>
+                                <a href="tel:+1{{$data['telefono_segundo']}}">+1 {{$data['telefono_segundo']}}</a> <br>
+                                <a href="tel:+1{{$data['telefono_tercero']}}">+1 {{$data['telefono_tercero']}}</a>
                             </p>
                             <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Make Call</a>
                         </div>
@@ -80,9 +80,7 @@
                         <div class="feature-content">
                             <h3 class="feture-title mb-20">Office Address</h3>
                             <p>
-                                Hourse:16/A, Romada pubg house <br>
-                                city tower, New York <br>
-                                United States
+                                {{$data['ubicacion_principal']}}
                             </p>
                             <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Get Directions</a>
                         </div>
@@ -96,9 +94,9 @@
                         <div class="feature-content">
                             <h3 class="feture-title mb-20">Social Connect</h3>
                             <p>
-                                <a href="www.facebook.com/example">www.facebook.com/example</a> <br>
-                                <a href="www.twitter.com/example">www.twitter.com/example</a> <br>
-                                <a href="www.behance.com/example">www.behance.com/example</a>
+                                <a href="{{$data['facebook']}}">{{$data['facebook']}}</a> <br>
+                                <a href="{{$data['twitter']}}">{{$data['twitter']}}</a> <br>
+                                <a href="{{$data['linkedin']}}">{{$data['linkedin']}}</a>
                             </p>
                             <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Get Connect</a>
                         </div>
@@ -117,12 +115,12 @@
                     <div class="contact-wrap">
                         <div class="row">
                             <div class="col-xl-5 col-lg-5">
-                                <div id="contact-map" class="contact-map"></div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.8842714891284!2d-80.20199132726249!3d26.265431429649652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1652158632949!5m2!1ses-419!2sco" width="450" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div class="col-xl-5 col-lg-6 offset-xl-1">
                                 <div class="section-heading section-heading-2 mb-50 mt-120">
                                     <h5 class="sub-title mb-22">Call To Action</h5>
-                                    <h2 class="section-title">Get an emergency call
+                                    <h2 class="section-title">Get an call
                                         or appoinment.</h2>
                                 </div>
                                 <form id="contact-form-main" action="mail.php" method="POST">
@@ -137,20 +135,15 @@
                                         </div>
                                         <div class="from-group-wrapper mt-10">
                                             <div class="form-group">
-                                                <label for="date"><i class="fal fa-calendar-alt"></i></label>
-                                                <input name="date" type="date" id="date">
-                                            </div>
-                                            <div class="form-group">
                                                 <select name="subject">
                                                     <option data-display="Subject">Subject</option>
                                                     <option value="1">Services</option>
                                                     <option value="2">Cleaning</option>
-                                                    <option value="3">Cleaning</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-group mt-10">
-                                            <button type="submit" class="site-btn boxed">Submit Request</button>
+                                            <button type="submit" class="site-btn boxed" disabled>Submit Request</button>
                                         </div>
                                     </div>
                                     <p class="ajax-response"></p>

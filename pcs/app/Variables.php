@@ -13,6 +13,8 @@ class Variables extends Model
             'ubicacion' => '5800 S. Sable Cir Margate, FL 33063',
             'ubicacion_principal' => '5800 S. Sable Cir Margate, FL 33063, United States',
             'telefono_principal' => '954-297-5142',
+            'telefono_segundo' => '',
+            'telefono_tercero' => '',
             'correo_principal' => 'mpedraza@pcscleanup.com',
             'facebook' => 'https://www.facebook.com/pcscleanupcorp',
             'twitter' => 'https://twitter.com/pcscleanup',
