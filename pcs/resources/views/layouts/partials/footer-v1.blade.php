@@ -17,11 +17,10 @@
                 <div class="footer-widget service-menu">
                     <h4 class="title">Our Services</h4>
                     <ul>
-                        <li><a href="about.html"><i class="fal fa-angle-right "></i> About Company</a></li>
-                        <li><a href="service.html"><i class="fal fa-angle-right "></i> Services</a></li>
-                        <li><a href="pricing.html"><i class="fal fa-angle-right "></i> Pricing</a></li>
-                        <li><a href="#0"><i class="fal fa-angle-right "></i> Calculator</a></li>
-                        <li><a href="blog.html"><i class="fal fa-angle-right "></i> Our Blog</a></li>
+                        <li><a href="#"><i class="fal fa-angle-right "></i> About Company</a></li>
+                        <li><a href="#"><i class="fal fa-angle-right "></i> Services</a></li>
+                        <li><a href="#"><i class="fal fa-angle-right "></i> Pricing</a></li>
+                        <li><a href="#"><i class="fal fa-angle-right "></i> Our Blog</a></li>
                     </ul>
                 </div>
             </div>
