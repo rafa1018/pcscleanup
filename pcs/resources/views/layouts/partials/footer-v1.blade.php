@@ -6,21 +6,17 @@
                     <h4 class="title">Our Services</h4>
                     <ul>
                         <li><a href="#0"><i class="fal fa-angle-right "></i> Floor and Carpet Cleaning</a></li>
-                        <li><a href="#0"><i class="fal fa-angle-right "></i> Window Cleaning</a></li>
                         <li><a href="#0"><i class="fal fa-angle-right "></i> Event Cleaning</a></li>
                         <li><a href="#0"><i class="fal fa-angle-right "></i> Pressure Washing</a></li>
-                        <li><a href="#0"><i class="fal fa-angle-right "></i> Post-Construction Cleanup</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-widget service-menu">
-                    <h4 class="title">Our Services</h4>
+                    <h4 class="title">About us</h4>
                     <ul>
-                        <li><a href="#"><i class="fal fa-angle-right "></i> About Company</a></li>
-                        <li><a href="#"><i class="fal fa-angle-right "></i> Services</a></li>
-                        <li><a href="#"><i class="fal fa-angle-right "></i> Pricing</a></li>
-                        <li><a href="#"><i class="fal fa-angle-right "></i> Our Blog</a></li>
+                        <li><a href="{{route('about')}}"><i class="fal fa-angle-right "></i> About Company</a></li>
+                        <li><a href="{{route('services')}}"><i class="fal fa-angle-right "></i> Services</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,7 +26,7 @@
                     <div class="footer-contact-info">
                         <div class="content">
                             <p>{{$data['ubicacion_principal']}}</p>
-                            <a href="#0"><i class="fal fa-angle-right"></i> Get Direction</a>
+                            <a href="{{route('contact')}}"><i class="fal fa-angle-right"></i> Get Direction</a>
                         </div>
                         <div class="box">
                             <h2><span>Get Free Estimate</span>
