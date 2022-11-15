@@ -7,7 +7,7 @@
                         <ul>
                             <li><a href="mailto:{{$data['correo_principal']}}">{{$data['correo_principal']}}</a></li>
                             <li><a href="tel:{{$data['telefono_principal']}}">{{$data['telefono_principal']}}</a></li>
-                            <li>{{$data['ubicacion']}}</li>
+                            @if($data['ubicacion'] != "") <p><i class="fal fa-rocket"></i> <span>{{$data['ubicacion']}} </span> @endif
                         </ul>
                     </div>
                 </div>
@@ -43,14 +43,12 @@
                             <ul>
                                 <li><a href="{{route('welcome')}}">Home</a>
                                 </li>
-                                <li><a href="#0">About</a></li>
-                                <li><a href="#0">Services</a>
+                                <li><a href="{{route('about')}}">About</a></li>
+                                <li><a href="{{route('services')}}">Services</a>
                                 </li>
-                               
-                                <li><a href="#0">News +</a></li>
-                                <li><a href="#">Team</a></li>
+                                <li><a href="{{route('team')}}">Team</a></li>
                                 <li><a href="{{route('contact')}}">Contact</a></li>
-                               
+
                             </ul>
                         </nav>
                     </div>

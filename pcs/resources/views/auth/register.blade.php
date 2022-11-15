@@ -15,7 +15,7 @@
                 <div class="col-lg-6 my-auto">
                     <div class="breadcrumb-nav">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{route('welcome')}}">Home</a></li>
                             <li>|</li>
                             <li>Register</li>
                         </ul>

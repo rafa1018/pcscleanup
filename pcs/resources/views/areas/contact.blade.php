@@ -17,7 +17,7 @@
                 <div class="col-lg-6 my-auto">
                     <div class="breadcrumb-nav">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{route('welcome')}}">Home</a></li>
                             <li>|</li>
                             <li>Contact</li>
                         </ul>
@@ -52,7 +52,7 @@
                                 <a href="mailto:{{$data['correo_secundario']}}">{{$data['correo_secundario']}}</a> <br>
                                 <a href="mailto:{{$data['correo_tercero']}}">{{$data['correo_tercero']}}</a>
                             </p>
-                            <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Mail Us</a>
+                            <a href="mailto:{{$data['correo_principal']}}" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Mail Us</a>
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,10 @@
                             <h3 class="feture-title mb-20">Phone Number</h3>
                             <p>
                                 <a href="tel:+1{{$data['telefono_principal']}}">+1 {{$data['telefono_principal']}}</a> <br>
-                                <a href="tel:+1{{$data['telefono_segundo']}}">+1 {{$data['telefono_segundo']}}</a> <br>
-                                <a href="tel:+1{{$data['telefono_tercero']}}">+1 {{$data['telefono_tercero']}}</a>
+                                @if($data['telefono_segundo'] != "")  <a href="tel:+1{{$data['telefono_segundo']}}">+1 {{$data['telefono_segundo']}}</a> <br> @endif
+                                @if($data['telefono_tercero'] != "")  <a href="tel:+1{{$data['telefono_tercero']}}">+1 {{$data['telefono_tercero']}}</a> @endif
                             </p>
-                            <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Make Call</a>
+                            <a href="tel:+1{{$data['telefono_principal']}}" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Make Call</a>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,6 @@
                             <p>
                                 {{$data['ubicacion_principal']}}
                             </p>
-                            <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Get Directions</a>
                         </div>
                     </div>
                 </div>
@@ -94,11 +93,11 @@
                         <div class="feature-content">
                             <h3 class="feture-title mb-20">Social Connect</h3>
                             <p>
-                                <a href="{{$data['facebook']}}">{{$data['facebook']}}</a> <br>
-                                <a href="{{$data['twitter']}}">{{$data['twitter']}}</a> <br>
-                                <a href="{{$data['linkedin']}}">{{$data['linkedin']}}</a>
+                                @if($data['facebook'] != "")  <a href="{{$data['facebook']}}">{{$data['facebook']}}</a> <br> @endif
+                                @if($data['twitter'] != "")  <a href="{{$data['twitter']}}">{{$data['twitter']}}</a> <br> @endif
+                                @if($data['linkedin'] != "")  <a href="{{$data['linkedin']}}">{{$data['linkedin']}}</a> @endif
                             </p>
-                            <a href="#0" class="inline-btn mt-10"><i class="fal fa-arrow-right"></i> Get Connect</a>
+
                         </div>
                     </div>
                 </div>
@@ -108,53 +107,118 @@
     <!-- feature area end -->
 
     <!-- cotact form start -->
-    <section class="contact-area pb-40">
+    <section class="contact-area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="contact-wrap">
                         <div class="row">
                             <div class="col-xl-5 col-lg-5">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.8842714891284!2d-80.20199132726249!3d26.265431429649652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1652158632949!5m2!1ses-419!2sco" width="450" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<img src="{{asset('assets/images/contacto-img.png')}}" style="height: 500px;margin: 100px 50px 10px;">
                             </div>
-                            <div class="col-xl-5 col-lg-6 offset-xl-1">
+                            <div class="col-xl-5 col-lg-5 offset-xl-1">
                                 <div class="section-heading section-heading-2 mb-50 mt-120">
                                     <h5 class="sub-title mb-22">Call To Action</h5>
                                     <h2 class="section-title">Get an call
                                         or appoinment.</h2>
                                 </div>
-                                <form id="contact-form-main" action="mail.php" method="POST">
+                                    <form id="frmEnviarCorreoPcs" method="post">
+                                        @csrf <!-- {{ csrf_field() }} -->
                                     <div class="cta-form mt-none-10 mb-120">
                                         <div class="form-group mt-10">
                                             <label for="name"><i class="fal fa-user"></i></label>
-                                            <input name="name" type="text" id="name" placeholder="Enter your name">
+                                            <input name="name" type="text" id="name" placeholder="Enter your name" required>
                                         </div>
                                         <div class="form-group mt-10">
                                             <label for="mail"><i class="fal fa-envelope"></i></label>
-                                            <input name="email" type="email" id="mail" placeholder="Enter your email">
+                                            <input name="email" type="email" id="mail" placeholder="Enter your email" required>
+                                        </div>
+                                        <div class="form-group mt-10">
+                                            <label for="number"><i class="fal fa-phone"></i></label>
+                                            <input id="number" tabindex="5" type="tel" name="phone" placeholder="(___) ___-____" required>
                                         </div>
                                         <div class="from-group-wrapper mt-10">
                                             <div class="form-group">
                                                 <select name="subject">
-                                                    <option data-display="Subject">Subject</option>
-                                                    <option value="1">Services</option>
-                                                    <option value="2">Cleaning</option>
+                                                    <option data-display="Subject" selected disabled >Subject</option>
+                                                    <option value="Services">Services</option>
+                                                    <option value="Cleaning">Cleaning</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-group mt-10">
-                                            <button type="submit" class="site-btn boxed" disabled>Submit Request</button>
+                                            <button type="submit" class="site-btn boxed">Submit Request</button>
                                         </div>
                                     </div>
                                     <p class="ajax-response"></p>
                                 </form>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
+
             </div>
+        </div>
+        <br>
+
+        <div class="col-xl-12 col-lg-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.8842714891284!2d-80.20199132726249!3d26.265431429649652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1652158632949!5m2!1ses-419!2sco" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
     <!-- cotact form end -->
 
-@endsection
+    @endsection
+    @section('scripts')
+
+
+    <script>
+
+        $("#frmEnviarCorreoPcs").on("submit", function(e) {
+            e.preventDefault();
+            var formData = new FormData(document.getElementById("frmEnviarCorreoPcs"));
+            var route = "{{ asset('/contact') }}";
+            var token = $("#token").val();
+            $.ajax({
+                    url: route,
+                    type: "POST",
+                    dataType: "json",
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                })
+                .done(function(resp) {
+                    if (resp.tipo == "success") {
+                        toastr["success"](resp.mensaje, resp.titulo);
+                    }
+
+                })
+                .fail(function(data) {
+                    if (data.responseJSON) {
+                        $.each(data.responseJSON.errors, function(key, value) {
+                            $('#' + key + 'Validation').html(value);
+                            $('#' + key).addClass("is-invalid")
+                            toastr["error"](value, "Error");
+                        });
+                    }
+                    if (data.status == 500) {
+                        swal.fire({
+                            title: 'Error...',
+                            text: 'Error with the message server, please try again later',
+                            icon: 'error',
+                            buttons: false,
+                            timer: 7500,
+                            showCancelButton: false,
+                            showConfirmButton: false,
+                        });
+                    }
+                });
+        });
+    </script>
+
+    @endsection
+
+
+

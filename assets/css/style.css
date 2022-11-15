@@ -350,7 +350,7 @@ img {
 	top: 104%;
 }
 .lang-icon .icon {
-    background: #00EFDA;
+    background: #004976;
     color: #004976;
 }
 .lang-icon > .site-btn:hover {
@@ -1416,6 +1416,14 @@ img {
 	width: 100%;
 	border-radius: 40px;
 }
+
+.wcu-content-new {
+    flex-basis: 75%;
+   }
+
+   .wcu-content-new .wcu-title {
+       margin-bottom: 20px;
+   }
 
 /* wcu 2 css */
 .wcu-area .section-heading-3 .section-title {
@@ -2926,7 +2934,7 @@ input.main-search-input:-ms-input-placeholder {
 	right: 0;
 	height: 100%;
 	content: "";
-	background: #00efda;
+	background: #004976;
 	position: absolute;
 	top: 0;
 	z-index: -1;
@@ -3075,7 +3083,7 @@ input.main-search-input:-ms-input-placeholder {
 	height: 500px;
 }
 .cta-area-2::before {
-	background-image: url(../images/bg/cta-1-bg-1.jpeg);
+	background-image: url(../images/bg/cta-1-bg-1.jpg);
 	width: 65%;
 	left: 0;
 	top: 0;
@@ -3746,7 +3754,7 @@ input.main-search-input:-ms-input-placeholder {
 	top: 20px;
 	z-index: 2;
 	left: 20px;
-	background: #00efda;
+	background: #004976;
 	display: inline-block;
 	font-weight: 700;
 	font-size: 18px;
@@ -3822,7 +3830,7 @@ input.main-search-input:-ms-input-placeholder {
 	color: #004876;
 }
 .singel-offer-box:hover, .singel-offer-box.yellow:hover {
-    background: #00EFDA;
+    background: #004976;
     color: #ffff;
 }
 .singel-offer-box:hover .offer-icon {
@@ -3989,7 +3997,7 @@ input.main-search-input:-ms-input-placeholder {
 	-webkit-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
-	
+
 }
 .format-video .video-play {
 		background: #fce023;

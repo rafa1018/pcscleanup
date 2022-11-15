@@ -13,7 +13,14 @@
 
 Route::get('/', 'WelcomeController@inicio')->name('welcome');
 Route::get('/contact', 'WelcomeController@contact')->name('contact');
+Route::get('/about-us', 'WelcomeController@about')->name('about');
+Route::get('/services', 'WelcomeController@services')->name('services');
+Route::get('/team', 'WelcomeController@team')->name('team');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::post('/contact','MailController@sendMail');
+Route::post('/services','MailController@sendMail');

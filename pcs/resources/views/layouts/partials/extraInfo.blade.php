@@ -16,7 +16,7 @@
                  with a consolidated market in our area.
                   We are fully licensed, bonded and insured for your peace of mind.
                    We offer competitive hourly and contratact rates and are also available
-                    for event clean-up services. 
+                    for event clean-up services.
                     Trust P.C.S for quality janitorial services.
                      Let us clean your commercial location today.
                 </p>
@@ -27,7 +27,7 @@
         </div>
         <div class="contact-list mb-40">
             <h4>Contact Info</h4>
-            <p><i class="fal fa-rocket"></i> <span>{{$data['ubicacion_principal']}} </span>
+            @if($data['ubicacion_principal'] != "") <p><i class="fal fa-rocket"></i> <span>{{$data['ubicacion_principal']}} </span> @endif
             </p>
             <p><i class="far fa-phone"></i> <span>{{$data['telefono_principal']}}</span> </p>
             <p><i class="far fa-envelope-open"></i><span>{{$data['correo_principal']}}</span></p>
