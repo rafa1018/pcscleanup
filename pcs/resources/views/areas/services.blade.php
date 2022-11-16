@@ -97,7 +97,7 @@
                             <img src="{{asset('img/services/residential-floor-cleaning.jpg')}}" alt="">
                         </div>
                         <div class="service-content">
-                            <h3 class="service-title"><a href="#">Residential Floor Cleaning</a></h3>
+                            <h3 class="service-title"><a href="#">Commercial Floor Cleaning</a></h3>
                             </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                             <img src="{{asset('img/services/religious-building-cleaning.jpg')}}" alt="">
                         </div>
                         <div class="service-content">
-                            <h3 class="service-title"><a href="#">Reigious Building Cleaning</a></h3>
+                            <h3 class="service-title"><a href="#">Religious Building Cleaning</a></h3>
                             </div>
                     </div>
                 </div>

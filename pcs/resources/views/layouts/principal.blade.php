@@ -32,7 +32,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- notifications css -->
     <link rel="stylesheet" href="{{ asset('assets/notifications/css/lobibox.min.css') }}" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -58,6 +58,11 @@
     @include('layouts.partials.extraInfo')
     <!-- extra info end -->
 
+
+
+    <a href="https://api.whatsapp.com/send?phone=+19545495543&text=Hello!%20I%20would%20like%20more%20information%20about%20your%20services." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        </a>
 
         {{-- toastr  funciona --}}
         <link href="{{ asset('assets/libs/toastr/toastr.min.css') }}" rel="stylesheet" />
