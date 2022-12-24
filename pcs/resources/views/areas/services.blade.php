@@ -77,7 +77,7 @@
                             <img src="{{asset('img/services/education-cleaning.jpg')}}" alt="">
                         </div>
                         <div class="service-content">
-                            <h3 class="service-title"><a href="#">Edutacion Cleaning</a></h3>
+                            <h3 class="service-title"><a href="#">Education Cleaning</a></h3>
                             </div>
                     </div>
                 </div>
